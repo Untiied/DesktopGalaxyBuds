@@ -1,14 +1,19 @@
 #include "BluetoothMessenger.h"
+#include <iostream>
+
+void Log(std::string message){
+    std::cout << message << std::endl;
+}
 
 void AuthenticateBluetoothEnabled(WinBuds::BluetoothMessenger* messenger) {
 
 	if (messenger->IsBluetoothEnabled()) {
-		printf("Bluetooth is already enabled!\n");
+        Log("Bluetooth is already enabled!\n");
 	}
 	else {
-		printf("Bluetooth isn't enabled... Attempting to turn it on.\n");
+		Log("Bluetooth isn't enabled... Attempting to turn it on.\n");
 		if (messenger->SetBluetoothState(BluetoothRadioState::On)) {
-			printf("Bluetooth Successfully turned on!\n");
+			Log("Bluetooth Successfully turned on!\n");
 		}
 	}
 }

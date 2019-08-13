@@ -38,6 +38,11 @@ Visual Studio
 *.vcxproj.filters
 *.vcxproj.user
 
+XCode
+*.xcodeproj
+*.xcworkspace
+
 build
 build-int
 
+*.DS_Store

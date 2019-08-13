@@ -4,6 +4,7 @@
 #ifdef _WIN32
 #include "Platforms/Windows/BluetoothContext.h"
 #elif __APPLE__
+#include "Platforms/Mac/BluetoothContext.h"
 #elif __linux__
 #endif
 

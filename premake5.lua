@@ -9,13 +9,18 @@ project "WinBuds"
 
    targetdir "build/%{cfg.buildcfg}"
    objdir "build-int/"
-   files { "src/**.h", "src/**.cpp" }
-   characterset ("ASCII")
+   files { "src/*.h", "src/*.cpp" }
 
-   links{
-      "Bthprops.lib",
-      "ws2_32.lib"
-   }
+   filter "system:windows"
+
+
+   configuration "windows"
+      files {"src/Platforms/Windows/**.h", "src/Platforms/Windows/**.cpp"}
+      links{"Bthprops.lib", "ws2_32.lib"}
+
+   configuration "macosx"
+      files {"src/Platforms/Mac/**.h", "src/Platforms/Mac/**.cpp"}
+
    filter "configurations:Debug"
       defines { "DEBUG" }
       symbols "On"
