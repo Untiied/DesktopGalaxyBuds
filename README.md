@@ -60,7 +60,7 @@ Pull requests are allowed, and encouraged! Larger edits to the code would requir
   
 
 ## Direction
-![Galaxy Panel]([https://i.imgur.com/9hQaMkk.jpg](https://i.imgur.com/9hQaMkk.jpg))
+![Galaxy Panel](https://i.imgur.com/9hQaMkk.jpg)
 In the end the project is looking for a clean looking user interface that allows for rapid connection with the GalaxyPods upon receiving a "notification" that the device is ready for connection. Alongside rapid connection we need to display signal strength, and the charge of each of the ear pods.
 
   
