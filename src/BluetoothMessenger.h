@@ -12,6 +12,9 @@
 
 namespace WinBuds {
 
+	// This class serves as a boiler plate for each of the different bluetooth api's on each system.
+	// By having a "messenger" in between all of them, it allows us to rapidly develop.
+
 	class BluetoothMessenger {
 		public:
 			BluetoothMessenger();
@@ -20,7 +23,11 @@ namespace WinBuds {
 
 			bool IsBluetoothEnabled();
 
+			bool IsBluetoothLESupported();
+
 			bool SetBluetoothState(BluetoothRadioState state);
+
+			void QueryForDevices();
 
 			inline BluetoothContext& GetContext() {
 				return *bluetooth_context;
