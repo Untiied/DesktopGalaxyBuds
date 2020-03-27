@@ -3,7 +3,7 @@
 
 # DesktopGalaxyBuds
 
-# SAMSUNGS implementation has been realeased.
+# SAMSUNGS implementation has been released.
 # https://www.samsung.com/us/support/owners/product/galaxy-buds
   
   
